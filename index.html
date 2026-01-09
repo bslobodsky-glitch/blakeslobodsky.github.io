@@ -7,3 +7,177 @@
 <body>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name / Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    /* Header / Navigation */
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 15, 15, 0.85);
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      padding: 1rem 5%;
+      border-bottom: 1px solid #222;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #00d4ff;
+    }
+
+    .nav-links a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 2.2rem;
+      font-size: 1.05rem;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #00d4ff;
+    }
+
+    /* Main sections */
+    section {
+      min-height: 100vh;
+      padding: 10rem 5% 6rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 3.8rem;
+    }
+
+    h2 {
+      font-size: 2.6rem;
+      color: #00d4ff;
+    }
+
+    /* Hero section */
+    #home {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* You can add your content in these containers */
+    .content-box {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 3rem 1rem;
+      background: #0a0a0a;
+      border-top: 1px solid #222;
+      color: #888;
+      font-size: 0.95rem;
+    }
+
+    /* Mobile menu (very basic) */
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none; /* you can add hamburger menu later if needed */
+      }
+      
+      h1 {
+        font-size: 2.8rem;
+      }
+      
+      h2 {
+        font-size: 2.2rem;
+      }
+      
+      section {
+        padding: 8rem 4% 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">YOUR NAME</div>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <div class="content-box">
+      <!-- Your introduction text goes here -->
+      <h1></h1>
+      <h2></h2>
+      <p></p>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="content-box">
+      <h2>About</h2>
+      <!-- Your about text goes here -->
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="content-box">
+      <h2>Projects</h2>
+      <!-- Your projects go here -->
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="content-box">
+      <h2>Contact</h2>
+      <!-- Your contact info / form goes here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Your Name — All rights reserved</p>
+  </footer>
+
+</body>
+</html>
