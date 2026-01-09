@@ -1,19 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
-</head>
-<body>
-</body>
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Your Name / Portfolio</title>
+  <title>Blake Slobodsky | Portfolio</title>
   <style>
     * {
       margin: 0;
@@ -28,7 +19,6 @@
       line-height: 1.6;
     }
 
-    /* Header / Navigation */
     header {
       position: fixed;
       top: 0;
@@ -66,7 +56,6 @@
       color: #00d4ff;
     }
 
-    /* Main sections */
     section {
       min-height: 100vh;
       padding: 10rem 5% 6rem;
@@ -88,20 +77,39 @@
       color: #00d4ff;
     }
 
-    /* Hero section */
     #home {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
 
-    /* You can add your content in these containers */
     .content-box {
       max-width: 900px;
       margin: 0 auto;
     }
 
-    /* Footer */
+    /* Skills grid */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .skill-item {
+      background: #1a1a1a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #333;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .skill-item:hover {
+      transform: translateY(-5px);
+      border-color: #00d4ff;
+    }
+
     footer {
       text-align: center;
       padding: 3rem 1rem;
@@ -111,23 +119,13 @@
       font-size: 0.95rem;
     }
 
-    /* Mobile menu (very basic) */
     @media (max-width: 768px) {
       .nav-links {
-        display: none; /* you can add hamburger menu later if needed */
+        display: none; /* add hamburger later if needed */
       }
-      
-      h1 {
-        font-size: 2.8rem;
-      }
-      
-      h2 {
-        font-size: 2.2rem;
-      }
-      
-      section {
-        padding: 8rem 4% 4rem;
-      }
+      h1 { font-size: 2.8rem; }
+      h2 { font-size: 2.2rem; }
+      section { padding: 8rem 4% 4rem; }
     }
   </style>
 </head>
@@ -135,10 +133,12 @@
 
   <header>
     <nav>
-      <div class="logo">YOUR NAME</div>
+      <div class="logo">BLAKE SLOBODSKY</div>
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#resume">Resume</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
@@ -147,7 +147,7 @@
 
   <section id="home">
     <div class="content-box">
-      <!-- Your introduction text goes here -->
+      <!-- Your big intro / hero text goes here -->
       <h1></h1>
       <h2></h2>
       <p></p>
@@ -156,8 +156,40 @@
 
   <section id="about">
     <div class="content-box">
-      <h2>About</h2>
-      <!-- Your about text goes here -->
+      <h2>About Me</h2>
+      <!-- Write your bio, background, interests, etc. here -->
+      <p></p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="content-box">
+      <h2>Skills</h2>
+      <!-- Add your skills here - feel free to edit/add more -->
+      <div class="skills-grid">
+        <div class="skill-item">HTML / CSS</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">Git & GitHub</div>
+        <div class="skill-item">Web Development</div>
+        <div class="skill-item">Responsive Design</div>
+        <!-- Add more as needed, e.g. React, Node.js, etc. -->
+      </div>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="content-box">
+      <h2>Resume</h2>
+      <!-- Options: embed PDF, list experience/education, or link to external resume -->
+      <p>Download my full resume: <a href="YOUR_RESUME_LINK.pdf" style="color:#00d4ff; text-decoration:none;">Resume.pdf</a></p>
+      
+      <!-- OR add experience/education timeline here -->
+      <h3>Experience</h3>
+      <p>[Your job title] — [Company] — [Dates]<br>[Brief description]</p>
+      
+      <h3>Education</h3>
+      <p>[Degree] — [School] — [Dates]<br>[Relevant details]</p>
     </div>
   </section>
 
@@ -171,12 +203,12 @@
   <section id="contact">
     <div class="content-box">
       <h2>Contact</h2>
-      <!-- Your contact info / form goes here -->
+      <!-- Your email, links, form, etc. -->
     </div>
   </section>
 
   <footer>
-    <p>© 2026 Your Name — All rights reserved</p>
+    <p>© 2026 Blake Slobodsky — All rights reserved</p>
   </footer>
 
 </body>
