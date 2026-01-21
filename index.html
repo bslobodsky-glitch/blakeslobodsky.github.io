@@ -1,15 +1,18 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Blake Slobodsky | Portfolio</title>
+  <title>Blake Slobodsky | Life Portfolio</title>
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -47,7 +50,7 @@
     .nav-links a {
       color: #ccc;
       text-decoration: none;
-      margin-left: 2.2rem;
+      margin-left: 1.8rem;
       font-size: 1.05rem;
       transition: color 0.3s;
     }
@@ -63,51 +66,75 @@
       margin: 0 auto;
     }
 
-    h1, h2 {
+    h1, h2, h3, h4 {
       color: #ffffff;
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
     }
 
-    h1 {
-      font-size: 3.8rem;
-    }
-
-    h2 {
-      font-size: 2.6rem;
-      color: #00d4ff;
-    }
-
-    #home {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+    h1 { font-size: 4rem; text-align: center; }
+    h2 { font-size: 2.8rem; color: #00d4ff; text-align: center; margin-bottom: 2rem; }
+    h3 { font-size: 1.8rem; color: #00d4ff; }
+    h4 { font-size: 1.4rem; }
 
     .content-box {
       max-width: 900px;
       margin: 0 auto;
     }
 
-    /* Skills grid */
-    .skills-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      margin-top: 2rem;
+    .intro-center {
+      text-align: center;
     }
 
-    .skill-item {
+    .profile-pic {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #00d4ff;
+      margin: 2rem auto;
+      display: block;
+    }
+
+    .achievements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    .achievement-item {
       background: #1a1a1a;
       padding: 1.5rem;
       border-radius: 8px;
-      text-align: center;
       border: 1px solid #333;
-      transition: transform 0.3s, border-color 0.3s;
     }
 
-    .skill-item:hover {
-      transform: translateY(-5px);
-      border-color: #00d4ff;
+    img.achievement-img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+      display: block;
+    }
+
+    .timeline {
+      margin: 2rem 0;
+    }
+
+    .timeline-item {
+      margin-bottom: 2rem;
+      padding-left: 2rem;
+      border-left: 3px solid #00d4ff;
+    }
+
+    .essay-link {
+      color: #00d4ff;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 0.5rem;
+    }
+
+    .essay-link:hover {
+      text-decoration: underline;
     }
 
     footer {
@@ -116,14 +143,11 @@
       background: #0a0a0a;
       border-top: 1px solid #222;
       color: #888;
-      font-size: 0.95rem;
     }
 
     @media (max-width: 768px) {
-      .nav-links {
-        display: none; /* add hamburger later if needed */
-      }
-      h1 { font-size: 2.8rem; }
+      .nav-links a { margin-left: 1rem; font-size: 0.95rem; }
+      h1 { font-size: 3rem; }
       h2 { font-size: 2.2rem; }
       section { padding: 8rem 4% 4rem; }
     }
@@ -133,77 +157,108 @@
 
   <header>
     <nav>
-      <div class="logo">BLAKE SLOBODSKY</div>
+      <div class="logo">Life Portfolio</div>
       <div class="nav-links">
         <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#achievements">Achievements</a>
         <a href="#skills">Skills</a>
-        <a href="#resume">Resume</a>
-        <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <section id="home">
-    <div class="content-box">
-      <!-- Your big intro / hero text goes here -->
-      <h1></h1>
-      <h2></h2>
-      <p></p>
+    <div class="content-box intro-center">
+      <h1>Life Portfolio</h1>
+      <h2>Blake Slobodsky</h2>
+      <img src="me 1.jpg" alt="Blake Slobodsky" class="profile-pic">
+      <p>10th Grade Student • Athlete • Writer • Leader</p>
     </div>
   </section>
 
   <section id="about">
     <div class="content-box">
       <h2>About Me</h2>
-      <!-- Write your bio, background, interests, etc. here -->
-      <p></p>
+      <p>Hello, My name is Blake Slobodsky, and I am currently a 10th grade student attending The Browning School on the Upper East Side in Manhattan, New York City. I was born and raised in New York, and have been going to Browning since Kindergarten. I live in Plainview Long Island, and have a dog named Cappauchino. I enjoy a wide variety of hobbies including sports, as I am a member of both the Varsity basketball and track teams at my school. I also enjoy writing and being a part of The Grytte, our school's student-run newspaper, whilst also being a committed member of both the debate and model UN teams of my school as well. Lastly at my school, I am a member of my school’s Black Student Union, the African american affinity group, and the overarching black student coalition, which is run by black students from across New York City. I have a passion for movies and comics particularly Marvel, and I also dabble in a bit of cooking, which I seek to improve. I also enjoy travelling with my parents, having explored many different cultures in Japan, France, Italy, and many other countries.</p>
+      
+      <h3>Life Story</h3>
+      <p>Born and raised in New York, I've attended The Browning School since Kindergarten. Growing up between Manhattan and Plainview, Long Island, I've built strong roots in both academics and community. Major milestones include joining varsity sports in high school, contributing to school publications and clubs, and discovering passions like Marvel comics, cooking, and international travel. Today, as a 10th grader, I balance rigorous classes at Browning with varsity basketball and track, writing for The Grytte, Model UN, debate, BSU/BSC involvement, and staying organized across all commitments — all while enjoying time with family, my dog Cappauchino, and exploring new cultures.</p>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <div class="content-box">
+      <h2>Notable Achievements</h2>
+      
+      <div class="achievements-grid">
+        <div class="achievement-item">
+          <h3>French</h3>
+          <img src="Screenshot 2026-01-20 223035.png" alt="French Test Grade" class="achievement-img">
+          <p>French class achievement / test example</p>
+        </div>
+        <div class="achievement-item">
+          <h3>Science</h3>
+          <img src="science good .png" alt="Science Test Grade" class="achievement-img">
+          <p>Strong performance in Science</p>
+        </div>
+        <div class="achievement-item">
+          <h3>English</h3>
+          <img src="english good.png" alt="English Achievement" class="achievement-img">
+          <p>English writing / grade example</p>
+        </div>
+        <div class="achievement-item">
+          <h3>History</h3>
+          <img src="history good.png" alt="History Achievement" class="achievement-img">
+          <p>Well-performed History writing</p>
+        </div>
+        <div class="achievement-item">
+          <h3>Math</h3>
+          <img src="math good.png" alt="Math Achievement" class="achievement-img">
+          <p>Strong Math performance</p>
+        </div>
+      </div>
+
+      <h3>Writing Development</h3>
+      <p>Examples of my writing progress over the years, showing improvement in structure, depth, and analysis.</p>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h4>Third Grade Essay: Blake Profiles in History</h4>
+          <a href="https://docs.google.com/document/d/1hykW9XT3EbKcLmHo25zUVG65fyx8hI-19wq4zBCXWDw/edit?tab=t.0" target="_blank" class="essay-link">View Essay</a>
+        </div>
+        <div class="timeline-item">
+          <h4>7th Grade Essay / Flash Fiction STEAM Project Results</h4>
+          <a href="https://docs.google.com/document/d/1scDx-MQs3DjWb3epiy2vST2zBmyeEaIfZwcvB_-qVls/edit?tab=t.0" target="_blank" class="essay-link">View Essay</a>
+        </div>
+        <div class="timeline-item">
+          <h4>9th Grade Essay: Blake Slobodsky - Inclass Meditation #1</h4>
+          <a href="https://docs.google.com/document/d/1emYW-ruGGqowzM3P7dng7GkWVvOef5Ol6mXF44F47pc/edit?tab=t.0" target="_blank" class="essay-link">View Essay</a>
+        </div>
+        <div class="timeline-item">
+          <h4>10th Grade Essay: English Character Analysis</h4>
+          <a href="https://docs.google.com/document/d/1xNQuuo_nz68pVT--taxtnWDpuGJnJYWT8JnzsRIVtr4/edit?tab=t.0" target="_blank" class="essay-link">View Essay</a>
+        </div>
+      </div>
+
+      <h3>Example of Good Character</h3>
+      <p>During COVID, I was blessed with the opportunity to help feed unfortunate families as a part of a program my parents were involved in. This memory has left a lasting impact on me forever. My mom is a doctor, and at the time she was receiving extra money for her work due to the dangers she put herself forth dealing with covid patients. My mother decided with this money instead of buying nice things for herself, she would instead give it to the less fortunate. Every two weeks, on a Saturday afternoon, I would go to a grocery store like Lidl, or shoprite and help my parents buy groceries and deliver them to the family we were given via the program. We were given a list of required things, but we also threw in a couple extras just to be nice. When we did it, I was young, and I did not understand the point, but after the 1st delivery, and seeing how much this benefited families, I realized how important it was to go out of your way to serve others and the community you are a part of.</p>
     </div>
   </section>
 
   <section id="skills">
     <div class="content-box">
-      <h2>Skills</h2>
-      <!-- Add your skills here - feel free to edit/add more -->
-      <div class="skills-grid">
-        <div class="skill-item">HTML / CSS</div>
-        <div class="skill-item">JavaScript</div>
-        <div class="skill-item">Python</div>
-        <div class="skill-item">Git & GitHub</div>
-        <div class="skill-item">Web Development</div>
-        <div class="skill-item">Responsive Design</div>
-        <!-- Add more as needed, e.g. React, Node.js, etc. -->
-      </div>
-    </div>
-  </section>
-
-  <section id="resume">
-    <div class="content-box">
-      <h2>Resume</h2>
-      <!-- Options: embed PDF, list experience/education, or link to external resume -->
-      <p>Download my full resume: <a href="YOUR_RESUME_LINK.pdf" style="color:#00d4ff; text-decoration:none;">Resume.pdf</a></p>
+      <h2>Skills & Organizational Habits</h2>
+      <p>In the classroom, I'm highly focused, consistently utilizing Cornell notetaking format whilst appropriately interacting with the class, whether it's to share an answer or guide a classmate towards it. I am rarely sidetracked, and if I do end up so, I manage to collect myself and turn my attention towards what's at hand. In English, history, and Dialogue which often hold group and larger class discussions, I try my best to share insightful information that builds upon previous points or explores new perspectives that lead to further discussion. In math and science where we are typically given work to solve ourselves, I remain focused and finish my work thoughtfully and on time. Due to my organizational habits, I am able to allocate appropriate study time at home, which helps me stay prepared for any assessments or projects planned.</p>
       
-      <!-- OR add experience/education timeline here -->
-      <h3>Experience</h3>
-      <p>[Your job title] — [Company] — [Dates]<br>[Brief description]</p>
-      
-      <h3>Education</h3>
-      <p>[Degree] — [School] — [Dates]<br>[Relevant details]</p>
-    </div>
-  </section>
-
-  <section id="projects">
-    <div class="content-box">
-      <h2>Projects</h2>
-      <!-- Your projects go here -->
+      <p>Earlier in my academic career, I struggled with submitting things on time, and managing my commitments, which led to increased stress and worse performance on things such as grades and sports. With me heading into my more important years of high school, I was forced to find a way to overcome these challenges. Luckily, my school provided me with a year-long planner, which allowed me to manage all my assignments for each class when they were due and I could add extra notes to determine how long they would take and more. I began utilizing my calendar applications on my phone and computer to assign dedicated times for studying in between practices for the many teams I am involved with. I stay organized mentally and physically too, keeping a clean and well-neated room space and back-pack, as well as having folders for every class with papers ordered by date. Online, my google drive is divided with folders for every class so I don't get lost in a sea of randomly opened documents. With these habits, I am able to go to sleep around the same time, and get around 7-8 hours of sleep which gets my mind and body ready for any hurdles I have to face the next day.</p>
     </div>
   </section>
 
   <section id="contact">
     <div class="content-box">
       <h2>Contact</h2>
-      <!-- Your email, links, form, etc. -->
+      <p>Email: [your.email@example.com] <!-- Replace with your real email --></p>
+      <!-- Add more contact info here if desired -->
     </div>
   </section>
 
